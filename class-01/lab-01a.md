@@ -6,7 +6,7 @@
 3️⃣  | Add a Js script to it
 4️⃣  | JS files should contain console.log, prompt and an alert
 
-## Version One
+## Version 1
 
 ```
 
