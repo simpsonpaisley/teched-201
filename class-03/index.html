@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lab 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, purple, red);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: white;
+            text-shadow: 4px 4px black;
+
+        }
+
+
+        #cardSpace {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+
+        }
+
+        #CardButton {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+
+        .card {
+            background-color: white;
+            border: 2px 2px 2px 2px black;
+            border-radius: 25px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: x-large;
+            margin: 30px;
+            width: 500px;
+            box-shadow: 5px 5px black;
+
+        }
+
+        .cardColumn {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+            line-height: 40px;
+        }
+
+
+        button {
+            background-color: white;
+            box-shadow: 5px 5px black;
+            transition: box-shadow 1s;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: large;
+            width: 250px;
+            margin-left: 170px;
+            margin-bottom: 20px;
+
+
+        }
+
+        button:hover {
+            box-shadow: none;
+            transition: box-shadow 1s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        #correctNumberDisplay {
+            font-family: 'Monoton', cursive;
+            font-size: 100px;
+            text-shadow: 5px 5px red;
+            color: purple;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            #cardSpace {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>About You</h1>
+
+    <div>
+        <div id="cardSpace">
+            <div class="cardColumn">
+                <div class="CardButton">
+
+                    <div class="card">
+
+                        <h2>Basic Information</h2>
+
+                        <ul id="infoList">
+
+                            <li id="name"> &#x270D; Name:</li>
+                            <li id="age"> &#x1F382; Age:</li>
+                            <li id="country">&#x1F30D; Country:</li>
+                            <li id="colour">&#127912; Favourite Colour:</li>
+
+                        </ul>
+                    </div>
+
+
+                    <button onclick="clickHandler()">Enter your Information</button>
+
+                </div>
+                <div class="CardButton">
+                    <div class="card">
+                        <h2>Number Game</h2>
+
+                        <p style="text-align: center;"> Guess the number in less than 6 tries.</p>
+
+                        <p id="correctNumberDisplay"></p>
+
+                        <p id="winLose" style="text-align: center;">You have 6 tries left.</p>
+                    </div>
+                    <button onclick="guessGame()">Guess the Number!</button>
+                </div>
+            </div>
+
+
+
+            <div class="CardButton">
+
+                <div class="card">
+
+                    <h2>Additional Information</h2>
+
+                    <ul id="addInfoList">
+
+                        <li id="edu">&#127891; Education Level:</li>
+                        <li id="progLang">&#128421;&#65039; Favourite Programming Language:</li>
+                        <li id="job">&#128188; Dream Job:</li>
+                        <li id="holiday">&#128748; Favourite Holiday Destination:</li>
+
+                    </ul>
+                </div>
+
+                <button onclick="moreInfoHandler()">Enter More Information</button>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <script>
+
+        // Code for Basic Information
+
+        function clickHandler() {
+            var userName = prompt("Please Enter your Name");
+            var userAge = prompt("Please Enter your Age");
+            var userCountry = prompt("Please Enter your Country");
+            var userColour = prompt("What is your Favourite Colour?");
+
+            document.getElementById("name").innerHTML = "&#x270D; Name: " + userName;
+            document.getElementById("age").innerHTML = "	&#x1F382; Age: " + userAge;
+            document.getElementById("country").innerHTML = "&#x1F30D; Country: " + userCountry;
+            document.getElementById("infoList").style.color = userColour;
+            document.getElementById("colour").innerHTML = "&#127912; Favourite Colour: " + userColour;
+
+        }
+
+        // Code for Additional Information
+
+        function moreInfoHandler() {
+
+            var education = prompt("What is your Education Level");
+            if (education == "A-Level" || education == "a-level" || education == "a level" || education == "a levels") {
+                alert("Me too!");
+            }
+
+
+            var favProgLang = prompt("What is your Favourite Programming Language?");
+            if (favProgLang == "JavaScript" || favProgLang == "javascript" || favProgLang == "js") {
+                alert(favProgLang + " - That's mine too.");
+            }
+
+            var dreamJob = prompt("What is your Dream Job?");
+            if (dreamJob == "Food Critic" || dreamJob == "food critic" || dreamJob == "restautant reviewer") {
+                alert("Snap!");
+            }
+
+
+            var holidayDest = prompt("What is your Favourite Holiday Destination?");
+            if (holidayDest == "Benidorm" || holidayDest == "benidorm" || holidayDest == "spain" || holidayDest == "Spain") {
+                alert(holidayDest + "'s my favorourite too!");
+            }
+
+
+
+            document.getElementById("edu").innerHTML = "&#127891; Education Level: " + education;
+            document.getElementById("progLang").innerHTML = "&#128421;&#65039; Favourite Programming Language: " + favProgLang;
+            document.getElementById("job").innerHTML = "&#128188; Dream Job: " + dreamJob;
+            document.getElementById("holiday").innerHTML = "&#128748; Favourite Holiday Destination: " + holidayDest;
+
+
+
+        }
+
+        // Code for Number Guessing Game
+
+        attempts = 0;
+        var guessingNumber = Math.floor(Math.random() * 100);
+        // var guessingNumber = 9;
+
+        function guessGame() {
+
+            if (attempts >= 6) {
+                alert("You Have Used all your tries! The correct number was...");
+                document.getElementById("correctNumberDisplay").innerHTML = guessingNumber;
+                document.getElementById("winLose").innerHTML = "Sorry, you have lost. The correct number was...";
+            } else {
+                var userGuess = prompt("Enter Your Guess")
+
+                if (userGuess == guessingNumber) {
+                    alert("Congratulations!! You Got the Correct Number!");
+                    document.getElementById("correctNumberDisplay").innerHTML = guessingNumber;
+                    document.getElementById("winLose").innerHTML = "Congrats!!! You Used " + attempts + " Attempts!";
+                } else if (userGuess > guessingNumber) {
+                    alert("This Number is Too High!");
+                } else if (userGuess < guessingNumber) {
+                    alert("This Number is Too Low!");
+                }
+
+            }
+
+
+
+
+            attempts = attempts + 1;
+            if (attempts <= 6) {
+                document.getElementById("winLose").innerHTML = "You Have " + (6 - attempts) + " Attempts Left";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
