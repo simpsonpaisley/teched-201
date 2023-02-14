@@ -1,3 +1,6 @@
 # Class 03
 
-## User Stories
+## What We Have Done in Today's Class
+
+- Guessing Number Game
+- CSS Box Model
