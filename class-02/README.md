@@ -5,4 +5,7 @@
 - Went Over Arrays
 - The || Operator
 - Else If Statements
+- For Loops
+- Conditionals
+- CSS Styling
 
