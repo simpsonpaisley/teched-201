@@ -110,3 +110,37 @@
 </html>
 
 ```
+
+## Naming Conventions
+
+```<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+
+  <body>
+
+    <button onclick="getSecretNumber()">Get Secret Number</button>
+
+    <button onclick="setSeretNumber()">Set Secret Number</button>
+
+    <script>
+
+      var secretNumber = 20;
+      
+      function getSecretNumber(){// gets the secret number
+        console.log(secretNumber)
+      }
+
+      function setSeretNumber(){// you are setting the secret number
+        secretNumber = prompt("set the secret number");
+      }
+      
+    </script>
+    
+  </body>
+</html>
+
+```
+
