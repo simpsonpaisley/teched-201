@@ -247,8 +247,8 @@
         // Code for Number Guessing Game
 
         attempts = 0;
-        var guessingNumber = Math.floor(Math.random() * 100);
-        // var guessingNumber = 9;
+        // var guessingNumber = Math.floor(Math.random() * 100);
+        var guessingNumber = 9;
 
         function guessGame() {
 
@@ -277,6 +277,8 @@
             attempts = attempts + 1;
             if (attempts <= 6) {
                 document.getElementById("winLose").innerHTML = "You Have " + (6 - attempts) + " Attempts Left";
+            } else if (userGuess == guessingNumber) {
+                document.getElementById("winLose").innerHTML = "Congrats!!! You Used " + attempts + " Attempts!";
             }
 
         }
