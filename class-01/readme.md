@@ -56,3 +56,13 @@ Servers can hold multiple websites, however, larger websites can use an entire d
 
 ![Diagram](https://iibawards-prod.s3.amazonaws.com/projects/images/000/000/592/large.jpg?1467151689)
 [Source](https://www.informationisbeautifulawards.com/showcase/592-how-the-internet-works)
+
+## Prompt, Alert, and Console Log
+
+`prompt()`, `alert()`, and `console.log()` are all ways to debug in JavaScript.
+
+These can be added to breakpoints in your code to check if the previous parts are working.
+
+- `prompt("Prompt Message")` - This can be used to create a input box pop-up, in which the user can input information.
+- `alert("Alert Message")` - This can be used to create an alert pop-up. This can be used to give the user information.
+- `console.log("Message!)` - This can be used to log information in the console. This can't be seen on the frontend.
