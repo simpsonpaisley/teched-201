@@ -54,9 +54,5 @@ Because IP addresses are hard to remember; domain names, such as youtube.com are
 
 Servers can hold multiple websites, however, larger websites can use an entire data center to themselves.
 
-![Diagram](https://www.informationisbeautifulawards.com/showcase/592-how-the-internet-works)
+![Diagram](https://iibawards-prod.s3.amazonaws.com/projects/images/000/000/592/large.jpg?1467151689)
 [Source](https://www.informationisbeautifulawards.com/showcase/592-how-the-internet-works)
-
-## Prompt, Alert, and Console Log
-
-The
