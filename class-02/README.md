@@ -9,3 +9,8 @@
 - Conditionals
 - CSS Styling
 
+## Arrays
+
+An array is a variable which can hold multiple values.
+
+Each array item is assigned an index number, starting with 0.
