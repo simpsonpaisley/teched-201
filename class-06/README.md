@@ -8,3 +8,5 @@ The DOM is the way in which JavaScript sees HTML content. It creates a tree, whi
 
 - `innerText` - only gets the text inside an element.
 - `innerHTML` - gets all HTML inside an element.
+
+## createElement
