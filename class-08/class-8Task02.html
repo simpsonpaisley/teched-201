@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            border: 1px solid black;
+        }
+
+        .main {
+            border: 1px solid black;
+        }
+
+        .footer {
+            border: 1px solid black;
+        }
+
+        .student {
+            border: 1px solid black;
+            padding: 2px;
+            width: 200px;
+            height: 100px;
+            background-color: bisque;
+
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="main">
+        <ul style="list-style-type: none">
+            <li class="student">Jez</li>
+            <li class="student">George</li>
+            <li class="student">Carla</li>
+            <li class="student">Paisley</li>
+            <li class="student">Jane</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+
+</html>
