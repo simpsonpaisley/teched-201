@@ -1,0 +1,326 @@
+# Lab 08
+
+1️⃣ | Change the css positioning to css flex box
+
+2️⃣ | header could be fixed or movable. its your choice
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Lab 08</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			body {
+				/*height: 1000px;
+				width: 1000px; */
+				font-family: 'Roboto', sans-serif;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0px;
+				max-width: 100%;
+			}
+
+			header {
+				background-color: salmon;
+				height: 10vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			header img {
+				border: 3px solid black;
+				box-shadow: 3px 3px black;
+				background-color: white;
+				border-radius: 50%;
+				width: 5vw;
+				height: 8vh;
+			}
+
+			h1 {
+				color: white;
+				text-shadow: 5px 2px black;
+				font-weight: 900;
+				font-size: 6vh;
+				font-family: 'Bungee', cursive;
+
+				margin-right: 20px;
+			}
+
+			#sideMain {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				gap: 0;
+			}
+
+			#side {
+				background-color: blue;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				width: 20%;
+				height: 100vh;
+			}
+
+			h2 {
+				color: white;
+			}
+
+			button {
+				background-color: salmon;
+				width: 50%;
+				border: 2px solid black;
+				box-shadow: 2px 2px black;
+				align-self: center;
+				font-size: large;
+				color: white;
+				padding: 5px;
+				transition-duration: 0.5s;
+				transition-timing-function: ease-in;
+			}
+
+			button:hover {
+				box-shadow: none;
+				transition-duration: 0.5s;
+				transition-timing-function: ease-in;
+			}
+
+			main {
+				background-color: green;
+				text-align: center;
+				background-image: linear-gradient(to right, blue, rgb(201, 201, 231));
+				border-left: 5px dashed black;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				width: 79.5%;
+				min-height: 100vh;
+			}
+
+			footer {
+				background-color: salmon;
+				text-align: center;
+				height: 10vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			table,
+			th,
+			td {
+				background-color: white;
+				border: 3px solid black;
+				padding: 10px 3px 10px 3px;
+			}
+
+			table {
+				width: 50%;
+				background-color: salmon;
+				box-shadow: 3px 3px black;
+			}
+
+			th {
+				background-color: #4834d4;
+				color: white;
+			}
+
+			td {
+				background-color: rgb(201, 201, 231);
+			}
+
+			@media (max-width: 484px) {
+				#sideMain {
+					flex-direction: column;
+				}
+
+				#side {
+					width: 100%;
+					height: 30vh;
+				}
+
+				main {
+					width: 100%;
+					min-height: 70vh;
+					border-left: none;
+					border-top: 5px dashed black;
+					background-image: linear-gradient(blue, rgb(201, 201, 231));
+				}
+
+				header img {
+					width: 8vw;
+					height: 5vh;
+				}
+
+				h1 {
+					font-size: 5vh;
+				}
+			}
+
+			@media (min-width: 485px) and (max-width: 1023px) {
+				#sideMain {
+					flex-direction: column;
+				}
+
+				#side {
+					width: 100%;
+					height: 30vh;
+				}
+
+				main {
+					width: 100%;
+					min-height: 70vh;
+					border-left: none;
+					border-top: 5px dashed black;
+					background-image: linear-gradient(blue, rgb(201, 201, 231));
+				}
+
+				header img {
+					width: 10vw;
+					height: 8vh;
+				}
+
+				h1 {
+					font-size: 55px;
+				}
+
+				h2 {
+					font-size: 35px;
+				}
+
+				button {
+					font-size: 35px;
+				}
+
+				table,
+				tr,
+				td {
+					font-size: 25px;
+				}
+
+				table {
+					width: 90%;
+				}
+			}
+
+			@media (min-width: 485px) and (max-width: 600px) {
+				h1 {
+					font-size: 4vh;
+				}
+			}
+
+			@media (min-width: 320px) and (max-width: 363px) {
+				h1 {
+					font-size: 4vh;
+				}
+
+				#side,
+				main,
+				header,
+				footer {
+					width: 102%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>Salmon Cookies</h1>
+			<img
+				src="salmon.png"
+				alt="salmon.png"
+			/>
+		</header>
+		<div id="sideMain">
+			<div id="side">
+				<h2>Click Here to add Location Data</h2>
+				<button onclick="addLocationHandler()">Create +</button>
+			</div>
+
+			<main>
+				<h2>Locations</h2>
+				<table id="parent">
+					<tr>
+						<th>Location</th>
+						<th>Minimum Customers</th>
+						<th>Maximum Customers</th>
+						<th>Cookies Sold</th>
+					</tr>
+				</table>
+			</main>
+		</div>
+
+		<footer>
+			<h1>FOOTER</h1>
+		</footer>
+
+		<script>
+			function addLocationHandler() {
+				var locationName = prompt('Please Enter the Location');
+				var minCustomerNumber = prompt('Please Add Minimum Customer Amount');
+				var maxCustomerNumber = prompt('Please Add Maximum Customer Amount');
+				var cookiesSold = prompt('Please Add Cookies Sold');
+
+				var createRow = document.createElement('tr');
+
+				var locationCell = document.createElement('td');
+				var minCell = document.createElement('td');
+				var maxCell = document.createElement('td');
+				var soldCell = document.createElement('td');
+
+				locationCell.innerText = locationName;
+				minCell.innerText = minCustomerNumber;
+				maxCell.innerText = maxCustomerNumber;
+				soldCell.innerText = cookiesSold;
+
+				createRow.appendChild(locationCell);
+				createRow.appendChild(minCell);
+				createRow.appendChild(maxCell);
+				createRow.appendChild(soldCell);
+
+				document.getElementById('parent').appendChild(createRow);
+			}
+		</script>
+	</body>
+</html>
+```
