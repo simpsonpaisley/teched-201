@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Pirates and Their Drinks</title>
+</head>
+
+<body>
+    <h1>Pirates and Their Drinks</h1>
+
+    <button onclick="drinksSelector()">Select Drinks </button>
+
+    <div id="pirates">
+    </div>
+
+    <script>
+
+        function drinksSelector() {
+            // Check it's working.
+            console.log("Check");
+
+            // Prompts to ask for information.
+
+            var pirateName = prompt("What is Your Name?");
+            var drink1 = prompt("1. What drink would you like?");
+            var drink2 = prompt("2. What drink would you like?");
+
+            // Code for making new list to show pirate information.
+
+            // Create Unordered List
+            var newList = document.createElement("ul");
+
+            // Create List Items
+
+            var nameList = document.createElement("li");
+            nameList.innerText = "Pirate Name: " + pirateName;
+
+            var drinkPoisonList = document.createElement("li");
+            drinkPoisonList.innerText = "Drink One: " + drink1;
+
+            var drinkTwoList = document.createElement("li");
+            drinkTwoList.innerText = "Drink Two: " + drink2;
+
+            // Put List Items into Unordered List
+
+            newList.appendChild(nameList);
+            newList.appendChild(drinkPoisonList);
+            newList.appendChild(drinkTwoList);
+
+            // Render Unordered List on Page
+
+            document.getElementById("pirates").appendChild(newList);
+
+
+
+        }
+    </script>
+</body>
+
+</html>

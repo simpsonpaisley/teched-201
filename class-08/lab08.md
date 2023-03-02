@@ -248,7 +248,7 @@
 				}
 			}
 
-			@media (min-width: 320px) and (max-width: 363px) {
+			@media (min-width: 319px) and (max-width: 363px) {
 				h1 {
 					font-size: 4vh;
 				}
@@ -257,7 +257,7 @@
 				main,
 				header,
 				footer {
-					width: 102%;
+					width: 100vw;
 				}
 			}
 		</style>
