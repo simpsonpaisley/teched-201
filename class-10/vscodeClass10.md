@@ -109,3 +109,68 @@
 ```
 
 ---
+
+## The Correct Way, Using Classes and Constructors
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cars by pixel</title>
+	</head>
+	<body>
+		<h1>CARS</h1>
+
+		<button onclick="carsAttributes()">Enter the car details</button>
+
+		<script>
+			// Function when the button is clicked
+			var arrayList = [];
+			function carsAttributes() {
+				var name = prompt('enter your name');
+				var carColor = prompt('enter car color');
+				var carBrand = prompt('Enter car brand');
+				var carCost = prompt('Enter the price');
+
+				// CLASS -> everything/everyone
+				class Cars {
+					constructor(_name, _color, _brand, _cost) {
+						this.name = _name;
+						this.color = _color;
+						this.brand = _brand;
+						this.cost = _cost;
+					}
+
+					run() {
+						return 'accelerator is pressed';
+					}
+
+					stop() {
+						return 'brake is pressed';
+					}
+
+					change() {
+						return 'clutch is pressed';
+					}
+
+					buy() {
+						return (
+							'I bought the car for ' +
+							this.cost +
+							'and the eprson name is ' +
+							this.name
+						);
+					}
+				}
+				// ASsigning values to the class
+				var someName = new Cars(name, carColor, carBrand, carCost);
+
+				arrayList.push(someName);
+				console.log(someName.buy());
+			}
+		</script>
+	</body>
+</html>
+```
+
+---
