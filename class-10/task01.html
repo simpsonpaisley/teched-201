@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 - Task 1</title>
+</head>
+
+<body>
+    <h1>Class 10 - Task 01</h1>
+
+    <h2>Click the Button Below to add some values to an Object!</h2>
+
+    <button onclick="objectClickHandler()">Click Here!</button>
+
+
+    <script>
+
+        function objectClickHandler() {
+
+            var newExampleObject = {};
+
+            var namePrompt = prompt("Please Enter Your Name");
+
+            newExampleObject.userName = namePrompt;
+
+            console.log(newExampleObject.userName);
+
+            var agePrompt = prompt("Please Enter Your Age");
+
+            newExampleObject.multiplication = function () {
+
+                var ageMultiply = agePrompt * 77;
+
+                return ageMultiply;
+            }
+
+            var infoArray = [];
+
+            var favouriteCar = prompt("What is Your Favourite Car?");
+            infoArray.push(favouriteCar);
+            var favouriteMovie = prompt("What is Your Favourite Movie?");
+            infoArray.push(favouriteMovie);
+
+            newExampleObject.favouriteThings = infoArray;
+
+
+            console.log(newExampleObject.multiplication() + " is you age multiplied by 77");
+
+            console.log(newExampleObject.multiplication);
+
+            console.table(newExampleObject.favouriteThings);
+
+            console.log(newExampleObject.favouriteThings[0]);
+
+            console.log(newExampleObject.favouriteThings[1]);
+
+
+            console.table(newExampleObject);
+        }
+    </script>
+</body>
+
+</html>
