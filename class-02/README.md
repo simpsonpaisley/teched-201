@@ -1,4 +1,4 @@
-#Class 02
+# Class 02
 
 ## What we Learnt in this Class
 

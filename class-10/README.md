@@ -37,3 +37,39 @@ This is because it is a funtion, and not a string.
 If you _do_ use the parenthesis, it will run the function.
 
 If you _don't_ use the parenthesis, it will just give the code from the function.
+
+---
+
+## `this` Keyword
+
+`this.keyName` refers to the object itself, which contains the method the `this` keyword is used in.
+
+You can _only_ use the `this` keyword inside a method. It will not work outside of a method, as it refers to the object the method is in.
+
+We can use this to save time.
+
+The `this` keyword can also be used in event handlers, as it will refer to the element the event handler is in. For example:
+
+```html
+<button onclick="this.style.color = 'blue'">Button</button>
+```
+
+This will change the button's color to blue.
+
+> In an object method, `this` refers to the object.
+>
+> Alone, `this` refers to the global object.
+>
+> In a function, `this` refers to the global object.
+>
+> In a function, in strict mode, `this` is undefined.
+>
+> In an event, `this` refers to the element that received the event.
+>
+> Methods like call(), apply(), and bind() can refer `this` to any object.
+
+[Source: W3 Schools](https://www.w3schools.com/js/js_this.asp)
+
+---
+
+## Classes and Constructors
