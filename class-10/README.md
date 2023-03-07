@@ -73,3 +73,50 @@ This will change the button's color to blue.
 ---
 
 ## Classes and Constructors
+
+Classes and constructors are templates for building objects.
+
+They can be used to write more efficient code, as instead of writing seperate objects for each possibility, we can simply make the template, and then add in properties.
+
+To do this, we can use the syntax below:
+
+```html
+<script>
+
+	// Adding the prompts for the different property pairs for the object.
+
+	var objectKeyOne = prompt("");
+	var objectKeyTwo = prompt("");
+	var objectKeyThree = prompt("");
+	var objectKeyFour = prompt("");
+
+	// These don't have to be prompts, but can be any other way of collecting data.
+
+	// Making the Object Blueprint:
+
+	class objectExample {
+	    constructor( _keyOne, _keyTwo, _keyThree, _keyFour) {
+	        this.objectKeyOne = _keyOne ;
+	        this.objectKeyTwo = _keyTwo ;
+	        this.objectKeyThree = _keyThree ;
+	        this.objectKeyFour = _keyFour ;
+	    }
+
+	    // To assign values to the class:
+
+	    var inputOne = new objectExample(objectKeyOne, objectKeyTwo, objectKeyThree, objectKeyFour);
+	}
+</script>
+```
+
+The information from these objects can be stored in an array, or in a database.
+
+To push the information to an array, we can use the code:
+
+```
+array.push(objectName);
+```
+
+---
+
+## Using Methods in Classes and Constructors
