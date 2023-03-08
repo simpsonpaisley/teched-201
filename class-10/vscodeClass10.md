@@ -174,3 +174,47 @@
 ```
 
 ---
+
+## Classes and Constructors with Methods
+
+```html
+<script>
+	// Function when the button is clicked
+	var array = []; // store this data in a db
+
+	function carsAttributes() {
+		var coverPage = prompt('enter the cover page');
+		var coverTitle = prompt('Enter the cover title');
+		var bookAuthor = prompt('Enter the name of the author');
+		var bookPrice = prompt('enter the price of the book');
+
+		// Classes can be called as "templates"/"blueprint"
+		// Class for car
+		// properties -> color,brand,cost
+		// methods -> run,stop,change,buy
+
+		// Class for e-commerce products -> books
+		class Book {
+			// // properties -> color,brand,cost
+			constructor(coverPage, coverTitle, bookAuthor, bookPrice) {
+				this.cover = coverPage;
+				this.title = coverTitle;
+				this.author = bookAuthor;
+				this.price = bookPrice;
+
+				console.log(this.title);
+			}
+
+			// method: a function isndie an object
+			fun() {
+				return 'this is funny book';
+			}
+		}
+
+		const bookDetails = new Book(coverPage, coverTitle, bookAuthor, bookPrice);
+
+		console.log(bookDetails.fun()); // working for you
+		console.log(bookDetails.fun); // printing only
+	}
+</script>
+```

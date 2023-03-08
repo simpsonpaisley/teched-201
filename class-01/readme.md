@@ -8,6 +8,8 @@
 - Reviewed topics from 102.
 - Learned about how to style our GitHub profiles.
 
+---
+
 ## Terminal Commands
 
 1️⃣ | pwd = print working directory
@@ -38,6 +40,8 @@ rm <filename> = remove a file permanently. Warning: there is no recovery!
 
 cp <source> <destination> = copy a file
 
+---
+
 ## How the Internet Works
 
 The internet is a network of optical fibre cables, which connect data centers with your devices.
@@ -56,6 +60,8 @@ Servers can hold multiple websites, however, larger websites can use an entire d
 
 ![Diagram](https://iibawards-prod.s3.amazonaws.com/projects/images/000/000/592/large.jpg?1467151689)
 [Source](https://www.informationisbeautifulawards.com/showcase/592-how-the-internet-works)
+
+---
 
 ## Prompt, Alert, and Console Log
 

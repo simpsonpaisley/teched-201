@@ -120,3 +120,14 @@ array.push(objectName);
 ---
 
 ## Using Methods in Classes and Constructors
+
+To add a method to a constructor, we use the same syntax as when adding a method to a standard object.
+
+```html
+<script>
+
+	methodName () {
+	    // method script
+	}
+</script>
+```

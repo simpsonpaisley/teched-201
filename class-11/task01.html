@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 - Task 01 - Forms</title>
+
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        label {
+            font-size: 15px;
+            ;
+        }
+
+        .form {
+            background-image: linear-gradient(blue, purple);
+            box-shadow: 5px 5px 5px black;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Class 11 - Task 01 - Forms</h1>
+    <div class="form">
+        <form name="formExample">
+            <label for="firstName">First Name:</label> <br>
+            <input type="text" id="firstName" name="firstName" placeholder="Please Enter Your First Name"
+                required /><br>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Please Enter Your Last Name" required /><br>
+            <label for="emailAd">Email Address:</label><br>
+            <input type="email" id="emailAd" name="emailAd" placeholder="Please Enter Your Email Address"
+                required /><br>
+            <p>Age: </p>
+            <form id="radio">
+                <input type="radio" id="018" name="age" value="018">
+                <label for="018">0 - 18</label><br>
+                <input type="radio" id="1825" name="age" value="1825">
+                <label for="1825">18 - 25</label><br>
+                <input type="radio" id="2550" name="age" value="2550">
+                <label for="2550">25 - 50</label><br>
+                <input type="radio" id="50" name="age" value="50up">
+                <label for="50">50 and Over</label><br>
+            </form>
+            <label for="password">Please Make a Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Please Enter a Password" required><br>
+            <label for="country">Country in UK:</label><br>
+            <select id="country" name="country">
+                <option value="england">England</option>
+                <option value="wales">Wales</option>
+                <option value="scotland">Scotland</option>
+                <option value="northernireland">Northern Ireland</option>
+                <option value="channel">Channel Islands</option>
+            </select>
+            <input type="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
