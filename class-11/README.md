@@ -81,3 +81,31 @@ They can be used as so:
 	/>
 </form>
 ```
+
+---
+
+## Form Backend
+
+To create an event listener and handler for a form submission, we can use the event listener `onsubmit`.
+
+We can then write a function for how to handle the submission.
+
+We can't see a console log of the information, because as soon as the usre clicks submit, the page will immediately refresh.
+
+To stop this we can use the following code:
+
+```javascript
+function formHandler() {
+	event.preventDefault(); // this will stop the page from reloading when the form is submitted.
+}
+```
+
+This will stop the page from reloading when the form is submitted, this is because it prevents the default behaviours of the submit are prevented.
+
+When information is submitted, it will be saved in an `event` object.
+
+This will contain a key-value pair `target`. This shows where the information is coming from.
+
+We can also use `console.log(event.target.name)` to narrow it down to the inputs with the same name value.
+
+We can then use `console.log(event.target.name.value);` to see the value the inputs contain.
