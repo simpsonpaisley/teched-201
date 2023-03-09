@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task02.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Signika+Negative:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Class 11 - Task 02</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Food Order Form</h1>
+    </header>
+    <!-- HTML for Form-->
+    <div class="formDiv">
+        <h2>Please Fill In This Form to Add Your Food to the Table</h2>
+        <form id="foodForm">
+            <label for="foodName">Name of Food</label>
+            <input type="text" name="foodName" id="foodName" placeholder="Please Enter Food Name" required />
+            <label for="foodType">Type of Food</label>
+            <input type="text" name="foodType" id="foodType" placeholder="Please Enter Food Type" required />
+            <label for="foodQuantity">Quantity</label>
+            <input type="number" name="foodQuantity" id="foodQuantity" placeholder="Please Enter Quantity" required />
+            <label for="foodImage">Food Image</label>
+            <input type="text" name="foodImage" id="foodImage" placeholder="Please Enter an Image Address" />
+            <input type="submit" />
+        </form>
+    </div>
+
+    <!-- HTML for Table-->
+    <div class="tableDiv">
+        <table id="foodDataTable">
+            <tr>
+                <th>Name</th>
+                <th>Food Type</th>
+                <th>Quantity</th>
+                <th>Image</th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Link to JavaScript File-->
+    <script src="task02.js"></script>
+</body>
+
+</html>

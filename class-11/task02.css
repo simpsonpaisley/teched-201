@@ -1,0 +1,76 @@
+body {
+    font-family: 'Signika Negative', sans-serif;
+    background-color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    background-color: orange;
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+    color: #FAF9F6;
+    text-shadow: 3px 3px black;
+    
+}
+
+.formDiv {
+    background-color: orange;
+    width: 75%;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 5px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+input[type="text"], input[type="number"] {
+    margin: 5px;
+    width: 35%;
+    text-align: center;
+    border: none;
+    height: 20px;
+}
+
+input[type="submit"] {
+    width: 25%;
+    height: 25px;
+    margin-top: 10px;
+    background-color: #FAF9F6;
+    border: none;
+    box-shadow: 3px 2px black;
+    font-weight: bold;
+}
+
+.tableDiv {
+    background-color: orange;
+    width: 75%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 5px 5px black;
+}
+
+table {
+    padding: 10px;
+}
+
+th, tr, td {
+    border: 2px solid black;
+    background-color: #FAF9F6;
+    text-align: center;
+    width: 200px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}

@@ -38,12 +38,10 @@ For example:
 <form name="myForm">
 	<input
 		type="text"
-		name="firstName"
-	/>
+		name="firstName" />
 	<input
 		type="text"
-		name="lastName"
-	/>
+		name="lastName" />
 </form>
 ```
 
@@ -77,8 +75,7 @@ They can be used as so:
 	<input
 		type="text"
 		id="firstName"
-		name="firstName"
-	/>
+		name="firstName" />
 </form>
 ```
 
@@ -109,3 +106,21 @@ This will contain a key-value pair `target`. This shows where the information is
 We can also use `console.log(event.target.name)` to narrow it down to the inputs with the same name value.
 
 We can then use `console.log(event.target.name.value);` to see the value the inputs contain.
+
+---
+
+## Adding Event Listeners Using JavaScript
+
+We can give the form an ID, and then use `document.getElementById("FormID");` to get the form, and assign it a variable.
+
+We can then use the code
+
+```javascript
+formVariableName.addEventListener('event', function () {
+	// function script.
+});
+```
+
+`addEventListener` takes 2 arguments, the first being the event you want to add, and then the function you want to happen on that event.
+
+You can also just use the name of a function you want to use in the function argument.
