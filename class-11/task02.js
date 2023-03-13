@@ -1,3 +1,4 @@
+"use strict";
 // Script for Adding Event Handler to Form
 
 var formSubmit = document.getElementById("foodForm"); // Getting the Form Element By Its ID

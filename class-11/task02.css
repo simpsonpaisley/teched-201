@@ -12,6 +12,7 @@ header {
     text-align: center;
     color: #FAF9F6;
     text-shadow: 3px 3px black;
+    width: 100%;
     
 }
 
@@ -47,6 +48,14 @@ input[type="submit"] {
     border: none;
     box-shadow: 3px 2px black;
     font-weight: bold;
+    transition-duration: 0.75s;
+    transition-timing-function: ease-in-out;
+}
+
+input[type="submit"]:hover {
+    box-shadow: none;
+    transition-duration: 0.75s;
+    transition-timing-function: ease-in-out;
 }
 
 .tableDiv {
