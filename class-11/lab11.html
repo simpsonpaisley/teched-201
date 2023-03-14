@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Lab 11</title>
+
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {
+            background-color: #2f3640;
+        }
+
+        header {
+            text-align: center;
+            background-color: #e1b12c;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1 {
+            justify-self: center;
+            color: #2f3640;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 55px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 100px;
+            margin-bottom: 25px;
+            padding-top: 25px;
+            margin-top: none;
+            background-color: #2f3640;
+        }
+
+        img {
+            width: 25vw;
+            height: 25vw;
+            border: 10px ridge #e1b12c;
+        }
+
+        @media screen and (min-width: 628px) and (max-width: 1029px) {
+            main {
+                gap: 50px;
+            }
+        }
+
+        @media screen and (max-width: 627px) and (min-width: 381px) {
+            img {
+                width: 50vw;
+                width: 25vh;
+            }
+
+            main {
+                gap: 20px;
+            }
+
+        }
+
+        @media screen and (min-width: 318px) and (max-width: 380px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img {
+                width: 80vw;
+                height: 50vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+
+    <main>
+        <img
+            src="data:image/jpeg;base64,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">
+        <img src="https://cdn.britannica.com/09/174009-050-82793AAE/Frog-Amphibian-Blue-poison-dart-frog-arrow.jpg"
+            alt="placeholder image">
+        <img src="https://www.rainforestanimals.net/wp-content/uploads/2018/12/redeyedtreefrogsmall.jpg"
+            alt="placeholder image">
+        <img src="https://www.animalspot.net/wp-content/uploads/2020/06/Red-Eyed-Tree-Frog-Picture.jpg"
+            alt="placeholder image">
+        <img src="https://media.istockphoto.com/id/1205358068/photo/dumpy-frog-on-green-leaves-dumpy-frog-sitting-on-branch.jpg?s=612x612&w=0&k=20&c=_So6mnBvXR3BG3d048f49p-lj7nvtMJqTzbRPMv7WA8="
+            alt="placeholder image">
+        <img src="https://cynthiabandurek.com/wp-content/uploads/2022/11/Mi-publicacion-1-1.jpg"
+            alt="placeholder image">
+    </main>
+</body>
+
+</html>

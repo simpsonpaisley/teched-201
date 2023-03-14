@@ -86,4 +86,34 @@ Logic errors are errors in the logic of the code.
 
 Type errors are errors which occur when an operation can't be performed when a value isn't of the expected type.
 
-Test
+---
+
+## Video Tags
+
+We can use the following code to embed a video onto a website.
+
+```html
+<video
+	width="320"
+	height="240"
+	autoplay
+	muted>
+	<source
+		src="sample.mp4"
+		type="video/mp4" />
+	sample
+</video>
+```
+
+## Audio Tags
+
+We can use the following code to add audio files to HTML.
+
+```html
+<audio controls>
+	<source
+		src="sample.mp3"
+		type="audio/mpeg" />
+	Your browser does not support the audio element.
+</audio>
+```
