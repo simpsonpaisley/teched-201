@@ -62,7 +62,7 @@
 		</style>
 	</head>
 	<body>
-		<h1>CSS TRANFORMATIONS</h1>
+		<h1>CSS TRANSFORMATIONS</h1>
 
 		<div id="transform-1">This is a box</div>
 	</body>
@@ -104,4 +104,80 @@
 		<div id="box">This is the treasure box</div>
 	</body>
 </html>
+```
+
+---
+
+## Local Storage
+
+```html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storage</title>
+    <style>
+      form {
+        border: 1px solid black;
+        width: 50%;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form onsubmit="formHandler()"">
+        <input type="text" placeholder="Enter the name" name="student" /><br /><br />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    <h1>Hey,<span id="display"></span> Welcome back</h1>
+    <script>
+      'use strict'
+
+      let array = ["george","jane","carla","paisley"];
+
+      var ele = document.getElementById('display');
+
+      let student = localStorage.getItem("student");
+      console.log(student);
+
+      if(array.includes(student)){
+
+        ele.innerText = student;
+
+      }else{
+        ele.innerText = "Fraud";
+      }
+
+      function formHandler(){
+        event.preventDefault();
+
+        let nameEntered = event.target.student.value;
+        array.includes(nameEntered.toLowerCase());// check to see
+
+        localStorage.setItem("student",nameEntered.toLowerCase());
+
+
+
+
+        if(array.includes(nameEntered.toLowerCase())){
+
+            ele.innerText = nameEntered;
+
+            // LOCAL STORAGE
+            // setter
+
+
+        }else{
+            ele.innerText = "Fraud";
+        }
+
+
+      }
+
+    </script>
+  </body>
+</html>
+
 ```

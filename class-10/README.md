@@ -22,7 +22,7 @@ To assign a method to an empty object, we can use the syntax:
 objectName.keyName = function() { // function script };
 ```
 
-Where `keyName` is the name you want the key to be, and thus the name of the method, and **_the script inside the funtion_** is the value.
+Where `keyName` is the name you want the key to be, and thus the name of the method, and **_the script inside the function_** is the value.
 
 ---
 
@@ -32,7 +32,7 @@ To access a method in an object, we can use the syntax;
 objectName.keyName();
 ```
 
-This is because it is a funtion, and not a string.
+This is because it is a function, and not a string.
 
 If you _do_ use the parenthesis, it will run the function.
 

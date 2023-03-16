@@ -150,3 +150,49 @@ This then needs to be called for in the element style you want to use it on, alo
 	}
 </style>
 ```
+
+---
+
+## Local Storage
+
+Local Storage allows data to be saved even when the page has been closed or refreshed.
+
+Data saved to local storage is saved in the browser.
+
+It can only be used as key-value pairs which are strings.
+
+Up to 5mb of data can be stored with local storage.
+
+```javascript
+
+localStorage.setItem(key: string);
+
+```
+
+This can be used to save data in the local storage.
+
+```javascript
+localStorage.getItem(key);
+```
+
+This can be used to get data from the local storage.
+
+### Arrays in Local Storage
+
+Arrays will be automatically converted to a string, but cannot be converted back to an array.
+
+To avoid this, we can use JSON. Javascript Object Notation.
+
+```javascript
+let numbers = [1, 2, 3, 4];
+
+JSON.stringify(numbers); // This changes the array to a string.
+
+localStorage.setItem('numberArray', JSON.stringify(numbers)); // To save a stringified array in local storage.
+
+// To convert the string back to an array.
+
+let infoFromLocal = localStorage.getItem('studentsArray');
+
+JSON.parse(infoFromLocal);
+```

@@ -57,7 +57,7 @@ input[type="inputType"] { }
 
 ### id Attribute
 
-This is used in the same way as id's in other elements. This is useful for people with screenreaders, as it allows the `<label>` element to reference the inputs, so people using screenreaders know which label goes with which input.
+This is used in the same way as id's in other elements. This is useful for people with screen readers, as it allows the `<label>` element to reference the inputs, so people using screenreaders know which label goes with which input.
 
 ### Label
 

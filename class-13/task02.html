@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>local Storage</title>
+</head>
+
+<body>
+    <form id="animalForm" name="animalForm" onsubmit="submitHandler()">
+        <label for="nameInput">Name:</label>
+        <input type="text" name="name" id="nameInput" />
+
+        <label for="animalInput">Favourite Animal: </label>
+        <input type="text" name="animal" id="animalInput" />
+
+        <label for="numberInput">Enter a Number:</label>
+        <input type="text" name="number" id="numberInput" />
+        <input type="submit" id="submitButton" />
+    </form>
+
+
+    <h1>Hello <span id="nameDisplay"></span> is <span id="animalDisplay"></span> your favourite animal?</h1>
+
+    <script>
+        "use strict";
+
+
+        let numberArray = [1, 2, 3, 4, 5];
+
+
+        function submitHandler() {
+            event.preventDefault();
+
+            let userName = event.target.nameInput.value; // Getting data from form.
+
+
+
+            let animalName = event.target.animalInput.value;
+
+
+
+            let newNumber = event.target.numberInput.value; // Setting it as a key-value pair in the lcoal storage.
+
+            localStorage.setItem("name", userName); // Setting it as a key-value pair in the local stroage.
+            localStorage.setItem("animal", animalName); // Getting data from the form.
+            localStorage.setItem("number", newNumber);
+
+
+        }
+
+
+
+        var firstName = document.getElementById("nameDisplay");
+
+        var animalName = document.getElementById("animalDisplay");
+
+        var getNameData = localStorage.getItem("name"); // Getting the data for name from the local storage.
+
+        var getAnimalData = localStorage.getItem("animal");
+
+        firstName.innerText = getNameData;
+        animalName.innerText = getAnimalData;
+
+    </script>
+
+</body>
+
+</html>
